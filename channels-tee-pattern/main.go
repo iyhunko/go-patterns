@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	ch1, ch2 := tee(generator())
+	ch1, ch2 := tee(generate())
 
 	wg := &sync.WaitGroup{}
 	wg.Add(2)
@@ -25,10 +25,10 @@ func main() {
 	wg.Wait()
 }
 
-func generator() chan int {
+func generate() chan int {
 	ch := make(chan int)
 	go func() {
-		for i := 1; i <= 5; i++ {
+		for i := 0; i <= 5; i++ {
 			ch <- i
 		}
 		close(ch)
@@ -36,7 +36,7 @@ func generator() chan int {
 	return ch
 }
 
-func tee(in <-chan int) (_, _ chan int) {
+func tee(in <-chan int) (_, _ <-chan int) {
 	out1 := make(chan int)
 	out2 := make(chan int)
 	go func() {
@@ -53,7 +53,6 @@ func tee(in <-chan int) (_, _ chan int) {
 				}
 			}
 		}
-
 	}()
 
 	return out1, out2
