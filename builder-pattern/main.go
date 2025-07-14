@@ -9,6 +9,10 @@ func main() {
 		Build()
 
 	println("Computer built with CPU:", computer.CPU, "RAM:", computer.RAM, "MB:", computer.MB)
+
+	// Create an office computer using the office computer builder
+	officeComputer := NewOfficeComputerBuilder().Build()
+	println("Office Computer built with CPU:", officeComputer.CPU, "RAM:", officeComputer.RAM, "MB:", officeComputer.MB)
 }
 
 type Computer struct {
@@ -55,5 +59,28 @@ func (b *computerBuilder) Build() Computer {
 		CPU: b.cpu,
 		RAM: b.ram,
 		MB:  b.mb,
+	}
+}
+
+// officeComputerBuilder is just an example how to create a builder with predefined values
+type officeComputerBuilder struct {
+	computerBuilder
+}
+
+func (b officeComputerBuilder) Build() Computer {
+	return Computer{
+		CPU: b.cpu,
+		RAM: b.ram,
+		MB:  b.mb,
+	}
+}
+
+func NewOfficeComputerBuilder() ComputerBuilderI {
+	return &officeComputerBuilder{
+		computerBuilder: computerBuilder{
+			cpu: "Intel i5",
+			ram: 8,
+			mb:  "ASUS Prime",
+		},
 	}
 }
