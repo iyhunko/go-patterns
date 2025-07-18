@@ -6,3 +6,4 @@ TODO:
 - add pattern "rate limiter"
 - add pattern "worker pool"
 - read book "Concurrency in GO" by Katherine Cox-Buday
+
