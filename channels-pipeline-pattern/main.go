@@ -10,7 +10,7 @@ func main() {
 func writer() <-chan int {
 	ch := make(chan int)
 	go func() {
-		for i := range 10 {
+		for i := 0; i < 10; i++ {
 			ch <- i + 1
 		}
 		close(ch)
