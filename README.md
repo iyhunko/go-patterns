@@ -31,7 +31,7 @@ Go's concurrency primitives (goroutines and channels) enable powerful patterns f
 
 - **[closed-channels](./closed-channels/)** - Demonstrates behavior of closed channels and how to handle them
 - **[nil-channels-block](./nil-channels-block/)** - Shows how nil channels block indefinitely
-- **[interface-type-assersion](./interface-type-assersion/)** - Examples of type assertion with interfaces
+- **[interface-type-assersion](./interface-type-assersion/)** - Examples of type assertions with interfaces
 - **[goroutines-fair-execution-time](./goroutines-fair-execution-time/)** - Demonstrates fair scheduling of goroutines
 
 ### Interview Examples
