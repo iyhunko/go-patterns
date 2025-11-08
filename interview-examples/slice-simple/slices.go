@@ -1,4 +1,4 @@
-package interview_examples
+package main
 
 import "fmt"
 
