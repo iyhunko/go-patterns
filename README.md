@@ -36,7 +36,13 @@ Go's concurrency primitives (goroutines and channels) enable powerful patterns f
 
 ### Interview Examples
 
-- **[interview-examples](./interview-examples/)** - Common Go interview topics including maps and slices
+- **[interview-examples](./interview-examples/)** - Common Go interview topics including:
+  - **[arrays](./interview-examples/arrays/)** - Array declaration, initialization, value semantics, and comparison
+  - **[maps-simple](./interview-examples/maps-simple/)** - Basic map operations and iteration
+  - **[slice-simple](./interview-examples/slice-simple/)** - Slice fundamentals, length, capacity, and append behavior
+  - **[slice-and-colons](./interview-examples/slice-and-colons/)** - Slice expressions and backing array pitfalls
+  - **[append-slice-with-colon](./interview-examples/append-slice-with-colon/)** - Advanced slice manipulation
+  - **[strings](./interview-examples/strings/)** - String immutability, UTF-8 encoding, runes vs bytes, and common operations
 
 ## 🚀 Getting Started
 
