@@ -38,11 +38,12 @@ Go's concurrency primitives (goroutines and channels) enable powerful patterns f
 
 - **[interview-examples](./interview-examples/)** - Common Go interview topics including:
   - **[interfaces](./interview-examples/interfaces/)** - Comprehensive interface concepts (implicit implementation, type assertions, nil interface gotchas)
-  - **[arrays](./interview-examples/arrays/)** - Array basics, value semantics, and comparisons
-  - **[maps-simple](./interview-examples/maps-simple/)** - Map fundamentals and iteration
-  - **[slice-simple](./interview-examples/slice-simple/)** - Slice basics with length and capacity
-  - **[slice-and-colons](./interview-examples/slice-and-colons/)** - Slice operations with colon syntax
-  - **[append-slice-with-colon](./interview-examples/append-slice-with-colon/)** - Appending to slices and capacity behavior
+  - **[arrays](./interview-examples/arrays/)** - Array declaration, initialization, value semantics, and comparison
+  - **[maps-simple](./interview-examples/maps-simple/)** - Basic map operations and iteration
+  - **[slice-simple](./interview-examples/slice-simple/)** - Slice fundamentals, length, capacity, and append behavior
+  - **[slice-and-colons](./interview-examples/slice-and-colons/)** - Slice expressions and backing array pitfalls
+  - **[append-slice-with-colon](./interview-examples/append-slice-with-colon/)** - Advanced slice manipulation
+  - **[strings](./interview-examples/strings/)** - String immutability, UTF-8 encoding, runes vs bytes, and common operations
 
 ## 🚀 Getting Started
 
